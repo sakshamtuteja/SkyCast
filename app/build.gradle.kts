@@ -7,6 +7,10 @@ android {
     namespace = "com.example.weather"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.weather"
         minSdk = 24
@@ -48,4 +52,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     //  lottie animations
     implementation ("com.airbnb.android:lottie:6.4.0")
+    // GSON converter
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+// retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
 }
